@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
+
+    <link href="{{ site.url }}{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="{{ site.url }}{{ site.baseurl }}/css/one-page-wonder.css" rel="stylesheet">
+    
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- <iframe src="https://github.com/etraudonun/termite/blob/master/_layouts/header.htm"></iframe> -->
+    <div>
+      <!-- Bootstrap Core CSS -->
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/index.html">Termite</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="{{ site.url }}{{ site.baseurl }}/index.html#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.url }}{{ site.baseurl }}/installation.html">Installation</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.url }}{{ site.baseurl }}/wiki-docs/Home.html">App Developer</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.url }}{{ site.baseurl }}/wiki-docs/Home.html">Termite Developer</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.url }}{{ site.baseurl }}/index.html#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    </div>
+    
+    <!-- HEADER -->
+    <!--
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+
+          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div>
+    -->
+    
+    <!-- Full Width Image Header -->
+    <header class="image-bg-fixed-height">
+        <img style="height: 350px; margin-top: 10px; border: 0px; box-shadow: 0 0;" src="{{ site.url }}{{ site.baseurl }}/imgs/termite.png?raw=true" alt="">
+    </header>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <!-- MAIN CONTENT -->
+    <section>
+      <div id="main_content_wrap" class="main_style">
+        <section id="main_content" class="inner">
+          {{ content }}
+        </section>
+      </div>
+      <div id="side_bar_content_wrap" class="side_bar_style">
+        <p><a class="side_bar_text_style" href="Home.html"><b>Termite</b></a></p>
+        <p><a class="side_bar_text_style" href="../architecture.html"><b>Termite architecture</b></a></p>
+        <p class="side_bar_text_style"><b>Tutorials</b></p>
+        <ul class="side_bar_listing_style">
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Termite-Configuration.html"><b>Lesson 1 - Configuring Termite</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Device-Detection.html"><b>Lesson 2 - Detecting devices with WiFi Direct</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Simulating-Movement.html"><b>Lesson 3 - Simulating device movement</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="WiFi-Groups-&-Messages.html"><b>Lesson 4 - WiFi group formation and message exchange</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Simulating-Groups.html"><b>Lesson 5 - Simulating WiFi groups</b></a></p></li>
+        </ul>
+        <p><a class="side_bar_text_style" href="{{ site.url }}{{ site.baseurl }}/wiki-docs/Termite-API-Guide.html"><b>Termite API guide</b></a></p>
+        <ul class="side_bar_listing_style">
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Simulated-WiFi-Events.html"><b>Handle simulated WiFi Direct events</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Initialize-API.html"><b>Initialize the Termite API</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Network-Probing.html"><b>Probing the network</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Setup-TCP-Connections.html"><b>Setting up TCP connections</b></a></p></li>
+          <li class="side_bar_li_style"><p><a class="side_bar_text_style" href="Service-Termination.html"><b>Termination of the Termite service</b></a></p></li>
+        </ul>                
+        <p><a class="side_bar_text_style" href="DIY.html"><b>DIY exercises</b></a></p>
+        <p><a class="side_bar_text_style" href="Useful-Tips.html"><b>Useful tips</b></a></p>
+        <p><a class="side_bar_text_style" href="FAQ.html"><b>FAQ</b></a></p>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <div class="col-lg-12">
+      <p style="margin-top:20px; text-align:center"><font color="white">Copyright © Nuno Santos 2017&gt;</font></p>
+    </div>
+
+
+
+  </body>
+</html>

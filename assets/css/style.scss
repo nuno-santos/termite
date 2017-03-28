@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.main_style {
+  width: 75%;
+  float: left;
+}
+
+.side_bar_style {
+  width: 25%;
+  margin-left: 75%;
+  background: #0090ff;
+  border-top: 1px solid #111;
+}
+
+.side_bar_text_style {
+  color: white;
+  font-weight: 700;
+  margin-left:1em;
+}
+
+.side_bar_listing_style {
+  margin-left:1em;
+}
+
+.side_bar_li_style {
+  color: white; /* bullet color */
+}

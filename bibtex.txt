@@ -1,0 +1,8 @@
+@inproceedings{bruno2015termite,
+  title={Termite: Emulation Testbed for Encounter Networks},
+  author={Bruno, Rodrigo and Santos, Nuno and Ferreira, Paulo},
+  booktitle={Proceedings of the 12th EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services},
+  pages={31--40},
+  year={2015},
+  organization={ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering)}
+}
