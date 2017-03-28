@@ -134,3 +134,5 @@ A 127.0.0.1 9011 SUCCESS
 5 - Verify that you can again open a channel between A and B and have them communicating.
 
 **Tips:** To redeploy the application, you only need to: deploy it to both emulators, and execute the `commit` command on the Termite client, to propagate the current network state to the devices. It is not necessary to repeat all the network formation steps from scratch if the network topology you need to emulate is already in memory in the termite tool. To know what's the current network state execute: `list network`.
+
+Once again we encourage you to try [some exercises](DIY.html) covering this section.
