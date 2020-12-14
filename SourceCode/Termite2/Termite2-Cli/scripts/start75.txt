@@ -1,0 +1,8 @@
+refresh
+stopall
+time set
+startemus 193.136.154.71 10 | 193.136.154.73 10 | 193.136.154.75 10 | 193.136.154.76 10 | 193.136.154.77 10 | 193.136.154.78 10 | 193.136.154.79 10 | 193.136.154.80 5
+installapp 193.136.154.71 termite2logger.apk all | 193.136.154.73 termite2logger.apk all | 193.136.154.75 termite2logger.apk all | 193.136.154.76 termite2logger.apk all | 193.136.154.77 termite2logger.apk all | 193.136.154.78 termite2logger.apk all | 193.136.154.79 termite2logger.apk all | 193.136.154.80 termite2logger.apk all
+startapp 193.136.154.71 com.example.termite2logger all | 193.136.154.73 com.example.termite2logger all | 193.136.154.75 com.example.termite2logger all | 193.136.154.76 com.example.termite2logger all | 193.136.154.77 com.example.termite2logger all | 193.136.154.78 com.example.termite2logger all | 193.136.154.79 com.example.termite2logger all | 193.136.154.80 com.example.termite2logger all
+time log
+time show

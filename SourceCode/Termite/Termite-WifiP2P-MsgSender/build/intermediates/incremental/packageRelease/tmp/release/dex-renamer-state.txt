@@ -1,0 +1,4 @@
+#Wed Apr 08 17:27:56 WEST 2020
+base.0=/Users/fernandomoreira/Documents/TermiteCMov/Termite-WifiP2P-MsgSender/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,493 @@
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.menu{
+    font-size: 15px;
+}
+.menu.map {
+    width: 150px;
+    box-shadow: 3px 3px 5px #888888;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 2px;
+    position: fixed;
+    display: none;
+}
+
+.menu.markers{
+    width: 350px;
+    position: fixed;
+    display: none;
+}
+
+.options {
+    width: 150px;
+    box-shadow: 3px 3px 5px #888888;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 2px;
+}
+
+.spacer {
+    width: 10px;
+}
+
+.choices {
+    width: 160px;
+    box-shadow: 3px 3px 5px #888888;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);;
+}
+
+.checkboxes {
+    margin-top: 2px;
+}
+
+#checkboxesdiv input[type=checkbox]{
+    display: none;
+}
+
+#checkboxesdiv input[type=checkbox]:checked + .inputlabel{
+    background-color: #6CB5FF;
+}
+
+#checkboxesbtn{
+    width: 100%;
+}
+
+#checkboxesbtn:hover{
+    background-color: lightgreen; 
+}
+
+.inputlabel{
+    display: inline-block;
+    width: 160px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#boxesbtndiv{
+    border-top:1px solid black;
+}
+
+.menu-item {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 1);;
+}
+
+.menu-item:hover {
+    background-color: #6CB5FF;
+    cursor: pointer;
+}
+
+.menu-item.removemarker {
+    border-top:1px solid grey;
+}
+
+tbody tr:hover {
+    outline: 1px solid black;
+}
+
+tbody td.rowcell:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    background-color: lightblue;
+}
+
+.dropform:hover {
+    cursor: pointer;
+}
+
+.dropform:focus {
+    outline: 0;
+}
+
+.btn.btn-default.btn-lg{
+    background-color: white;
+    outline: none;
+}
+
+.btn.btn-default.btn-lg:hover{
+    background-color: lightblue;
+}
+
+.btn.btn-default.btn-lg{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1vw;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#infobutton{
+    width: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+} 
+
+#savebutton{
+    width: 7.5%;
+}
+
+#savebutton:hover{
+    background-color: lightblue; 
+}
+
+#uploadlabel{
+    width: 7.5%;
+    margin-right: 5%;
+
+    font-weight: normal !important;
+    font-size: 1vw !important;
+    vertical-align: middle;
+    display: inline-block;
+    
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+#uploadlabel:hover{
+    background-color: lightblue; 
+}
+
+#opdonebutton{
+    width: 15%;
+    margin-right: 2%;
+}
+
+#emulatorsbutton{
+    width: 15%;
+}
+
+#commitbutton{
+    width: 28%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+    font-weight: bold;
+}
+
+#commitbutton:hover:enabled{
+    background-color: green;
+    color: white;
+}
+
+#commitbutton:hover:disabled{
+    background-color: white;
+}
+
+#refresh:hover{
+    background-color: lightblue; 
+}
+
+#closeButton:hover {
+    background-color: rgb(255, 102, 102);
+    color: white;
+}
+
+#saveOperations{
+    float: left;
+}
+
+#saveOperations:hover:enabled{
+    background-color: green;
+    color: white;
+}
+
+#commitEntry {
+    color: green;
+    font-size: 18px !important;
+    font-weight: bold;
+    border-bottom:2px solid rgba(0, 128, 0, 0.5);
+}
+
+#clearEntry {
+    font-size: 18px !important;
+    font-weight: bold;
+    border-bottom:2px solid rgba(0, 0, 0, 0.5);
+}
+
+#startEntry {
+    color: green;
+}
+
+#pauseEntry {
+    color: rgb(231, 145, 46);
+}
+
+#stopEntry {
+    color: red;
+}
+
+.glyphicon-refresh:hover{
+    cursor: pointer;
+}
+
+.custom-control-container {
+    margin: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.custom-control {
+    cursor: pointer;
+    direction: ltr;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    color: #000000;
+    font-family: "Roboto", Arial, sans-serif;
+    -webkit-user-select: none;
+    font-size: 15px !important;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.14902);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+    min-width: 28px;
+    font-weight: 500;
+}
+
+.custom-control:focus{
+    outline: none;
+}
+
+#moveMode{
+    cursor: default;
+}
+
+#moveStart{
+    visibility: visible;
+    font-size: 16px !important;
+    padding: 5px 15px;
+}
+
+#moveStop{
+    visibility: visible;
+    font-size: 16px !important;
+    padding: 5px 15px;
+}
+
+#moveStart:hover{
+    background-color: lightblue; 
+}
+
+#moveStop:hover{
+    background-color: lightblue; 
+}
+
+#switchTableBtn:hover{
+    background-color: lightblue; 
+}
+
+#popUpDiv{
+    cursor: default;
+    font-size: 15px !important;
+    margin-top: 5px;
+    margin-right: 10px;
+    -webkit-box-shadow: rgba(173, 216, 230, 0.500) 5px 5px 5px -1px;
+    box-shadow: rgba(173, 216, 230, 0.500) 5px 5px 5px -1px;
+    transition:visibility 1000ms;
+    text-align: left;
+}
+
+.infodivider{
+    border-bottom: 1px solid grey;
+}
+
+.infoimg{
+    border: 1px solid grey;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+    margin: 5px;
+}
+
+#configBtn{
+    margin-left: 5px;
+    display:table;
+}
+
+#configCancelBtn{
+    float: left;
+}
+
+#configCancelBtn:hover{
+    background-color: rgb(255, 102, 102);
+    color: #ffffff;
+}
+
+#configConfirmBtn:hover{
+    background-color: #008000;
+    color: white;
+}
+
+.configOptionDivisor{
+    height: 30px;
+}
+
+.configOption{
+    font-size: 17px;
+    padding: 7px;
+    border-bottom: 1px solid grey;
+}
+
+p{
+    margin:0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+}
+
+#configMode{
+    display: block;
+}
+
+#configMovement{
+    display: block;
+}
+
+#configWifiRange{
+    display: block;
+}
+
+.emusOnNetworklist{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.networkListTitle {
+    border-top: 1px solid grey;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.startEmulatorBtn {
+    float: right;
+
+    font-size: 13px;
+    font-weight: normal;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.startEmulatorBtn:hover {
+    background-color: lightblue;
+}
+
+#installedBtn:hover {
+    background-color: lightblue;
+}
+
+.emuslist {
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.emuData {
+}
+
+.emuDataTitle {
+}
+
+#stopEmuBtn:hover:enabled{
+    background-color: lightblue;
+}
+
+#emulatorDataTitle{
+    font-size: 20px;
+}
+
+#refreshEmusBtn{
+    float: right;
+
+    font-size: 13px;
+    font-weight: normal;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+#refreshEmusBtn:hover{
+    background-color: lightblue;
+}

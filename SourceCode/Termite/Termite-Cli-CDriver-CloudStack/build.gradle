@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+dependencies {
+    compile project(':Termite-Cli')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'org.codehaus.groovy:groovy-all:2.3.6'
+}
+
+sourceSets {
+    main {
+        java { srcDirs = [] }    // no source dirs for the java compiler
+        groovy { srcDirs = ["src/main/groovy", "src/main/java"] }  // compile everything in src/ with groovy
+    }
+}
+
+task publish (dependsOn: 'build', type: Copy) {
+    description 'Copies the final jar to the drivers directory of termite cli.'
+    from 'build/libs'
+    from 'libs'
+    into '../Termite-Cli/drivers/connectors/cloudstack'
+}
+

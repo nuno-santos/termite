@@ -1,0 +1,69 @@
+list emus
+newdevice a
+newdevice b
+assignaddr e1
+assignaddr e2
+binddevice a e1
+binddevice b e2
+move a (b)
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit
+wait 1
+creategroup a (b)
+commit
+wait 2
+deletegroup a
+commit

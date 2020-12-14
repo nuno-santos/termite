@@ -1,0 +1,2 @@
+#If you want to use a specific ip address place it on the line bellow without spaces, example:
+#192.168.1.2

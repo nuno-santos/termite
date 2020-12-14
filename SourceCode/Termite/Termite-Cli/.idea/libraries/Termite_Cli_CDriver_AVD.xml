@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Termite-Cli-CDriver-AVD">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/drivers/connectors/avd/Termite-Cli-CDriver-AVD.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+.DS_Store
+*.idea
+*.gradle
+*/build
+/local.properties
+/Termite-Cli/out
+/AndroidAppsForTesting/PeerScanner/.idea/
+/AndroidAppsForTesting/Termite-WifiP2P-MsgSender/.idea/
+*.iml
+/Termite2UI/build/

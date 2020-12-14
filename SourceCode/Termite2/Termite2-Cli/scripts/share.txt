@@ -1,0 +1,250 @@
+time reset
+time set
+refresh
+newdevice a
+newdevice b
+binddevice a e1
+binddevice b e2
+move a (b)
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+wait 1 s
+creategroup a (b)
+commit
+wait 2 s
+deletegroup a
+commit
+time log

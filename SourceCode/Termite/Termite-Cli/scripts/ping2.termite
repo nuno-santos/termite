@@ -1,0 +1,38 @@
+list emus
+newdevice 1
+newdevice 2
+assignaddr e1
+assignaddr e2
+binddevice 1 e1
+binddevice 2 e2
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time set
+ping
+time log
+time show

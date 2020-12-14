@@ -1,0 +1,3 @@
+startemus 192.168.1.188 all
+installapp 192.168.1.188 termite2logger.apk all
+startapp 192.168.1.188 com.example.termite2logger all

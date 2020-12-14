@@ -1,0 +1,89 @@
+time reset
+time set
+createavds 193.136.154.71 10 pc1emu 21
+createavds 193.136.154.72 10 pc2emu 21
+createavds 193.136.154.73 10 pc3emu 21
+createavds 193.136.154.75 10 pc5emu 21
+createavds 193.136.154.76 10 pc6emu 21
+createavds 193.136.154.77 10 pc7emu 21
+createavds 193.136.154.78 10 pc8emu 21
+createavds 193.136.154.79 10 pc9emu 21
+createavds 193.136.154.80 10 pc10emu 21
+time log
+time set
+startemus 193.136.154.71 2
+startemus 193.136.154.71 2
+startemus 193.136.154.71 2
+startemus 193.136.154.71 2
+startemus 193.136.154.71 2
+time log
+time set
+startemus 193.136.154.72 2
+startemus 193.136.154.72 2
+startemus 193.136.154.72 2
+startemus 193.136.154.72 2
+startemus 193.136.154.72 2
+time log
+time set
+startemus 193.136.154.73 2
+startemus 193.136.154.73 2
+startemus 193.136.154.73 2
+startemus 193.136.154.73 2
+startemus 193.136.154.73 2
+time log
+time set
+startemus 193.136.154.74 2
+startemus 193.136.154.74 2
+startemus 193.136.154.74 2
+startemus 193.136.154.74 2
+startemus 193.136.154.74 2
+time log
+time set
+startemus 193.136.154.75 2
+startemus 193.136.154.75 2
+startemus 193.136.154.75 2
+startemus 193.136.154.75 2
+startemus 193.136.154.75 2
+time log
+time set
+startemus 193.136.154.76 2
+startemus 193.136.154.76 2
+startemus 193.136.154.76 2
+startemus 193.136.154.76 2
+startemus 193.136.154.76 2
+time log
+time set
+startemus 193.136.154.77 2
+startemus 193.136.154.77 2
+startemus 193.136.154.77 2
+startemus 193.136.154.77 2
+startemus 193.136.154.77 2
+time log
+time set
+startemus 193.136.154.78 2
+startemus 193.136.154.78 2
+startemus 193.136.154.78 2
+startemus 193.136.154.78 2
+startemus 193.136.154.78 2
+time log
+time set
+startemus 193.136.154.79 2
+startemus 193.136.154.79 2
+startemus 193.136.154.79 2
+startemus 193.136.154.79 2
+startemus 193.136.154.79 2
+time log
+time set
+startemus 193.136.154.80 2
+startemus 193.136.154.80 2
+startemus 193.136.154.80 2
+startemus 193.136.154.80 2
+startemus 193.136.154.80 2
+time log
+time set
+installapp all termite2logger.apk all
+refresh
+time log
+time show
+
+

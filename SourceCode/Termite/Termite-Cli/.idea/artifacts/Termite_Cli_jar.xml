@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Termite-Cli:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Termite_Cli_jar</output-path>
+    <root id="archive" name="Termite-Cli.jar">
+      <element id="module-output" name="Termite-Cli" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Termite-Cli-CDriver-Genymotion">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/drivers/connectors/genymotion/Termite-Cli-CDriver-Genymotion.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

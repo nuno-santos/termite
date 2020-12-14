@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Termite2UI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Styling-->
+    <link rel="stylesheet" type="text/css" href="css/pagestyle.css">
+    <link rel="stylesheet" type="text/css" href="css/mapstyle.css">
+</head>
+
+<body onload="start()" oncontextmenu="return false">
+    <div class="modal fade bd-example-modal-lg" id="informationModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document"> <!-- style="width: 80%;"> -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"><b>Basic Information</b></h3>
+                </div>
+                <div class="modal-body">
+                    <ul style="font-size: 16px; line-height: 1.6;">
+                        <li><b style="font-size: 20px; ">Node colors</b></li>
+                            <ul>
+                                <li><img src="icons/red.png" height="24" width="15"> normal |
+                                    <img src="icons/blue.png" height="24" width="15"> focused | 
+                                    <img src="icons/green.png" height="24" width="15"> group owner |
+                                    <img src="icons/yellow.png" height="24" width="15"> group member.</li>
+                            </ul>
+                    </br>
+                    <div class="infodivider"></div>
+                        <li><b style="font-size: 20px;">Binding</b></li>
+                            <ul>
+                                <li>To bind or unbind a node to an android emulator just click on the respective binding table cell <img src="images/bind.png" height="5%" width="5%" class="infoimg"> and selected the desired emulator option.</li>
+                            </ul>
+                        </br>
+
+                        <div class="infodivider"></div>
+                        <li><b style="font-size: 20px;">Map menu</b> (Right click anywhere on the map to access):</li>
+                            <ul>
+                                <li><ins>Create Node</ins> by clicking on the option <img src="images/createnode.png" height="20%" width="20%" class="infoimg"></li>
+                                <li><ins>Clear Network</ins> by clicking on the option <img src="images/clearnetwork.png" height="20%" width="20%" class="infoimg"></li>
+                            </ul>
+                    </br>
+                    <div class="infodivider"></div>
+                        <li><b style="font-size: 20px;">Node menu</b> (Right click on node to access):</li>
+                            <ul>
+                                <li><ins>Create Group</ins> by clicking on the option <img src="images/creategroup.png" height="30%" width="30%" class="infoimg"></li>
+                                <li><ins>Join Group</ins> by clicking on the option <img src="images/joingroup.png" height="30%" width="30%" class="infoimg"></li>
+                                <li><ins>Leave Group</ins> by clicking on the option <img src="images/leavegroup.png" height="30%" width="30%" class="infoimg"></li>
+                                <li><ins>Delete Group</ins> by clicking on the option <img src="images/deletegroup.png" height="20%" width="20%" class="infoimg"></li>
+                                <li><ins>Move Node</ins> by clicking on the option <img src="images/movenode.png" height="20%" width="20%" class="infoimg"></li>
+                                <li><ins>Delete Node</ins> by clicking on the option <img src="images/deletenode.png" height="20%" width="20%" class="infoimg"></li>
+                                <li> Note that the options Create, Join, Leave and Delete group are available based on Wifi-Direct group rules (explained bellow).
+                            </ul>
+                    </br>
+                    <div class="infodivider"></div>
+                        <li><b style="font-size: 20px;">Node movement</b></li>
+                            Nodes can be moved in two away, by drag and drop and by selecting the move node option inside the node menu.
+                            <div style="font-size: 18px; padding-top:1%;"><b>Via Drag:</b></div>
+                            <ul>
+                                <li>Just <ins>drag and drop</ins> the node to the desired position.</li>
+                            </ul>
+                            <div style="font-size: 18px; padding-top:1%;"><b>Via Event:</b> <img src="images/event.png" height="30%" width="30%" class="infoimg"></div>
+                            <ul>
+                                <li>To move a node <ins>select the Move Node option</ins> inside the node menu and click on the desired node destination.</li>
+                                <li>To start, pause or stop the movement event just press the associated button <img src="images/start.png" height="14%" width="14%" class="infoimg"></li>
+                            </ul>
+                    </br>
+                    <div class="infodivider"></div>
+                        <li><b style="font-size: 20px;">Emulators view</b></li>
+                        From this view you can see what termite server(s) are connected to termite2 client and all available emulators. From this view you can also:
+                        <ul>
+                            <li>Click <img src="images/installedbtn.png" height="12%" width="12%" class="infoimg"> button to receive a message with all installed avd's in each connected termite server (termite servers are represented for the displayed network ip).</li>
+                            <li>Click <img src="images/startemubtn.png" height="15%" width="15%" class="infoimg"> button to start the desired number of emulator(s), with the option to auto start an application.</li>    
+                            <li>Click <img src="images/stopemubtn.png" height="18%" width="18%" class="infoimg"> button to stop the selected emulator or all.</li>
+                            Importante: Any operation here performed can take some time and the UI may appear stuck while it's processesing the request (installed, start or stop of emulators.).
+                        </ul>
+                    </br>
+                    <div class="infodivider"></div>
+                        <li><b style="font-size: 20px;">Group rules</b></li>
+                            <ul>
+                                <li>A node can only be group owner (GO node) of one group.</li>
+                                <li>Groups can be empty (the group owner is the only member).</li>
+                                <li>A node can only join a group when in proximity of the group owner node (within circle range).</li>
+                                <li>If a node moves outside the group owner range, he automatically leaves the group.</li>
+                                <li>When a GO node moves, nodes within the group will be removed if not in proximity.</li>
+                                <li>A group is deleted if the GO node is deleted.</li>
+                            </ul>
+                    </br>
+                    <div class="infodivider"></div>
+                        <li><b style="font-size: 20px;">UI Buttons</b></li>
+                            <ul>
+                                <li>Click <img src="images/configbtn.png" height="6%" width="6%" class="infoimg"> button to see and change the <ins>UI configuration options</ins>.</li>
+                                <li>Click <img src="images/savenetworkbtn.png" height="10%" width="10%" class="infoimg"> button to <ins>save a snapshot of the current network topology to a text file</ins>.</li>    
+                                <li>Click <img src="images/loadbtn.png" height="12%" width="12%" class="infoimg"> button to <ins>upload a text file containing a pre-configured network topology or a list of performed operations</ins>.</li>
+                                <li>Click <img src="images/historybtn.png" height="16%" width="16%" class="infoimg"> button to <ins>see the operations done until now</ins>.</li>
+                                <li>Click <img src="images/saveoperationsbtn.png" height="15%" width="15%" class="infoimg"> button (inside the view opened by pressing the operation button) to <ins>save all operation done until now to a text file</ins>. Note that operations performed during the automatic node movement event are not save.</li>
+                                <li>Click <img src="images/emulatorsbtn.png" height="15%" width="15%" class="infoimg"> button to open the emulators view.</li>
+                                <li>Click <img src="images/switchbtn.png" height="6%" width="6%" class="infoimg"> button at the top of the nodes/groups table to <ins>cycle over the Nodes and Groups tables</ins>.</li>
+                                <li>Click <img src="images/commitbtn.png" height="15%" width="15%" class="infoimg"> button to <ins><b>propagate all changes done in the network</b></ins> to the binded emulators connected to Termite2 Client.</li>
+                    
+                            </ul>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="closeButton" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="commandsDoneModal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLongTitle"><b>Operations Done</b></h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul id= "commandsdonelist" style="font-size: 16px;">
+                            <!-- Populated using  setCmdsDoneList()-->
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="saveOperations" disabled="true" onclick="save('operations')" data-dismiss="modal" title="Saves all operation done to a text file. NOTE that operations between Start and Stop cannot be saved."><i class="glyphicon glyphicon-save"></i> Save Operations</button>
+                        <button type="button" class="btn btn-secondary" id="closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="emulatorsDataModal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            
+                <div class="modal-content">
+                    <div class="modal-header">
+                            <b id="emulatorDataTitle">Emulators Data</b>
+                        <div style="float: right;">
+                            <div id="configWifiRange">
+                                <button type="button" class="btn btn-secondary" id="installedBtn" onclick="getInstalled()">Installed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <ul id= "emulatorsData" style="font-size: 16px;">
+                            <!-- Populated using  setEmulatorsDataView()-->
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <div style="float: left;">
+                            <button type="button" class="btn btn-secondary" id="stopEmuBtn" disabled="true" onclick="stopEmulator()">Stop emulator</button>
+                            <select id="stopEmuOptions">
+                                <!-- Populated using  setStopEmuOptions()-->
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="configModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLongTitle"><b>UI configurations</b></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id= "configOptions" style="font-size: 16px;">
+                            <div class="configOption" id="configBinding">
+                                Automatic node binding:
+                                <div style="float: right;">
+                                    <label class="radio-inline"><input type="radio" name="autoBind" id="autoBindOn">On</label>
+                                    <label class="radio-inline"><input type="radio" name="autoBind" id="autoBindOff" checked>Off</label>
+                                </div>
+                            </div>
+                            <div class="configOptionDivisor"></div>
+                            <div class="configOption" id="configAlerts">
+                                Alert on group changes:
+                                <div style="float: right;">
+                                    <label class="radio-inline"><input type="radio" name="autoAlert" id="autoAlertOn" checked>On</label>
+                                    <label class="radio-inline"><input type="radio" name="autoAlert" id="autoAlertOff">Off</label>
+                                </div>
+                            </div>
+                            <div class="configOptionDivisor"></div>
+                            <div class="configOption" id="configMovement">
+                                Node movement speed:
+                                <div style="float: right;">
+                                    <select id="movementspeed">
+                                        <option value="walking" selected>Walking (5m/s)</option>
+                                        <option value="bicycling">Bicycling (10m/s)</option>
+                                        <option value="driving" >Driving (20m/s)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="configOptionDivisor"></div>
+                            <div class="configOption" id="configWifiRange">
+                                WiFi-Direct range:
+                                <div style="float: right;">
+                                    <select id="wifiRange">
+                                        <option value="10">10m</option>
+                                        <option value="30">30m</option>
+                                        <option value="50" selected>50m</option>
+                                        <option value="80">80m</option>
+                                        <option value="100">100m</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="configOptionDivisor"></div>
+                            <div style="background-color: rgba(255, 0, 0, 0.15);"><small>
+                                <p>NOTE:
+                                <p>- Node movement speed configurations are only available when no movement events are active.
+                                <p>- Changing node movement speed will delete any created route(s).
+                                <p>- Changing automatic node binding does not take effect on currect created nodes.
+                                <p>- Changing WiFi-Direct range can affect current groups.
+                            </small></div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="configCancelBtn" data-dismiss="modal" onclick="cancelConfiguration()">Cancel</button>
+                            <button type="button" class="btn btn-secondary" id="configConfirmBtn" data-dismiss="modal" onclick="confirmConfiguration()">Confirm</button>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="main-container" >
+
+        <div class="left-container">   
+            <div class="map-container">
+                <div class="network" id="map"> <!--Map view section-->
+                </div>
+    
+                <!--Contex menu on map-->
+                <div class="menu map" id="mapmenu">
+                    <div class="menu-item" id="addmarker"><i class="glyphicon glyphicon-map-marker"></i> Create Node</div>
+                    <div class="menu-item" id="deleteallmarkers"><i class="glyphicon glyphicon-remove"></i> Clear Network</div>
+                </div>
+                <!--Context menu for markers-->
+                <div class="menu markers" id="markermenu">
+    
+                    <div class="section left col-xs-5 options" id="markermenuoptions">
+                        <div class="menu-item 1" id="creategroup"><i class="glyphicon glyphicon-user"></i> Create Group</div>
+                        <div class="menu-item 2" id="joingroup"><i class="glyphicon glyphicon-plus-sign"></i> Join Group</div>
+                        <div class="menu-item 3" id="leavegroup"><i class="glyphicon glyphicon-minus-sign"></i> Leave Group</div>
+                        <div class="menu-item 4" id="deletegroup"><i class="glyphicon glyphicon-remove-sign"></i> Delete Group</div>
+                        <div class="menu-item move" id="movenode"><i class="glyphicon glyphicon-move"></i> Move Node</div>
+                        <div class="menu-item removemarker" id="removemarker"><i class="glyphicon glyphicon-remove"></i> Delete Node</div>
+                    </div>
+    
+                    <div class="section left col-xs-1 spacer"></div>
+    
+                    <div class="section left col-xs-6 choices" id="markermenuchoices">
+                            <div class="checkboxes" id="checkboxes">
+                                <form id="checkboxform">
+                                    <!--Populated through javascript functions-->   
+                                </form>
+                                <div id="boxesbtndiv">
+                                    <button id="checkboxesbtn" onclick="choicesButtonClicked()">Confirm</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <div class="buttonsview" id="buttonsviewid">
+                    <div class="buttonsviewwrapper">
+                        <button id="infobutton" class="btn btn-default btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg" title="Click to show help menu.">Help</button>
+                        <button id="savebutton" class="btn btn-default btn-lg" onclick="save('network')" title="Click to save a text file with the current network topology."><span class="glyphicon glyphicon-save"></span> Save</button>
+                        <label id="uploadlabel" for="uploadinput" title="Click to load pre-configured network or operations text file."><span class="glyphicon glyphicon-open"></span> Load</label>
+                        <input type="file" id="uploadinput" accept=".txt" style="display: none;" onchange="loadNetwork()">
+                        <button id="opdonebutton" class="btn btn-default btn-lg" data-toggle="modal" data-target="#commandsDoneModal" onclick="setOperationDoneList()" title="Click to see history of operation done.">Operations Done</button>
+                        <button id="emulatorsbutton" class="btn btn-default btn-lg" data-toggle="modal" onclick="openEmulatorsView()" data-target="#emulatorsDataModal" title="Click to see available emulators data.">Emulators</button>
+                        <button id="commitbutton" class="btn btn-default btn-lg" disabled="true" onclick="commit()" title="Click to propagate network changes to Termite Client and all binded emulatores.">Commit</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="right-container" id="rigthsectionid">
+            <div class="data" >
+            <!--CONSOLE VIEW SECTION-->
+                <table class="table table-sm table-bordered" id="nodestable">
+                    <thead>
+                        <tr style="font-size: 16px;">
+                            <th scope="col" style="width: 5%">Node</th>
+                            <th scope="col"style="width: 30%">Binds</th>
+                            <th scope="col"style="width: 65%">Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Row and entries are added and removed with js functions, when a node is created/removed-->
+                    </tbody>
+                </table>
+
+                <table class="table table-sm table-bordered" id="groupstable">
+                    <thead>
+                        <tr style="font-size: 16px;">
+                            <th scope="col" style="width:30%">Group Owner</th>
+                            <th scope="col" style="width:70%">Members</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Row and entries are added and removed with js functions, when a node is created/removed-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Bootstrap-->>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--My JS files-->>
+    <script type="text/JavaScript" src="scripts/map.js"></script>
+    </body>
+</html>

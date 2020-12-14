@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Termite-Cli/Termite-Cli.iml" filepath="$PROJECT_DIR$/Termite-Cli/Termite-Cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Termite-Cli-CDriver-AVD/Termite-Cli-CDriver-AVD.iml" filepath="$PROJECT_DIR$/Termite-Cli-CDriver-AVD/Termite-Cli-CDriver-AVD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Termite-Cli-CDriver-CloudStack/Termite-Cli-CDriver-CloudStack.iml" filepath="$PROJECT_DIR$/Termite-Cli-CDriver-CloudStack/Termite-Cli-CDriver-CloudStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Termite-Cli-CDriver-Genymotion/Termite-Cli-CDriver-Genymotion.iml" filepath="$PROJECT_DIR$/Termite-Cli-CDriver-Genymotion/Termite-Cli-CDriver-Genymotion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Termite-WifiP2P-API/Termite-WifiP2P-API.iml" filepath="$PROJECT_DIR$/Termite-WifiP2P-API/Termite-WifiP2P-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Termite-WifiP2P-MsgSender/Termite-WifiP2P-MsgSender.iml" filepath="$PROJECT_DIR$/Termite-WifiP2P-MsgSender/Termite-WifiP2P-MsgSender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Termite-WifiP2P-PeerScanner/Termite-WifiP2P-PeerScanner.iml" filepath="$PROJECT_DIR$/Termite-WifiP2P-PeerScanner/Termite-WifiP2P-PeerScanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Termite-WifiP2P-SimpleChat/Termite-WifiP2P-SimpleChat.iml" filepath="$PROJECT_DIR$/Termite-WifiP2P-SimpleChat/Termite-WifiP2P-SimpleChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TermiteCMov.iml" filepath="$PROJECT_DIR$/TermiteCMov.iml" />
+    </modules>
+  </component>
+</project>

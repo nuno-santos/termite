@@ -1,0 +1,8 @@
+include 'Termite-WifiP2P-API'
+include 'Termite-WifiP2P-PeerScanner'
+include 'Termite-WifiP2P-MsgSender'
+include 'Termite-WifiP2P-SimpleChat'
+include 'Termite-Cli'
+include 'Termite-Cli-CDriver-AVD'
+include 'Termite-Cli-CDriver-Genymotion'
+include 'Termite-Cli-CDriver-CloudStack'

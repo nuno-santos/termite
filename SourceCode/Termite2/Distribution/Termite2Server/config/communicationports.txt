@@ -1,0 +1,8 @@
+#Here you can configure the ports used to receive the Termite2 Client and other Termite2 Server(s) connections.
+#ONLY CHANGE THE PORT NUMBERS XXXX (example: clientport:XXXX)
+#Note that changing any of the port numbers can affect commmunications with the other Termite2 system components:
+#The serverport value is also use to contact other Termite2 Server(s) as such choose a port that is equal between all of then
+#The clientport must also be registered on the Termite2 Client config/networks.txt file "networkip:clientport" in other for it to connect to this Termite2 Server.
+
+clientport:8085
+serverport:8095

@@ -1,0 +1,185 @@
+time set
+newdevice 1
+newdevice 2
+newdevice 3
+newdevice 4
+newdevice 5
+newdevice 6
+newdevice 7
+newdevice 8
+newdevice 9
+newdevice 10
+newdevice 11
+newdevice 12
+newdevice 13
+newdevice 14
+newdevice 15
+newdevice 16
+newdevice 17
+newdevice 18
+newdevice 19
+newdevice 20
+newdevice 21
+newdevice 22
+newdevice 23
+newdevice 24
+newdevice 25
+newdevice 26
+newdevice 27
+newdevice 28
+newdevice 29
+newdevice 30
+newdevice 31
+newdevice 32
+newdevice 33
+newdevice 34
+newdevice 35
+newdevice 36
+newdevice 37
+newdevice 38
+newdevice 39
+newdevice 40
+newdevice 41
+newdevice 42
+newdevice 43
+newdevice 44
+newdevice 45
+newdevice 46
+newdevice 47
+newdevice 48
+newdevice 49
+newdevice 50
+newdevice 51
+newdevice 52
+newdevice 53
+newdevice 54
+newdevice 55
+newdevice 56
+newdevice 57
+newdevice 58
+newdevice 59
+newdevice 60
+newdevice 61
+newdevice 62
+newdevice 63
+newdevice 64
+newdevice 65
+newdevice 66
+newdevice 67
+newdevice 68
+newdevice 69
+newdevice 70
+newdevice 71
+newdevice 72
+newdevice 73
+newdevice 74
+newdevice 75
+newdevice 76
+newdevice 77
+newdevice 78
+newdevice 79
+newdevice 80
+newdevice 81
+newdevice 82
+newdevice 83
+newdevice 84
+newdevice 85
+newdevice 86
+newdevice 87
+newdevice 88
+newdevice 89
+newdevice 90
+binddevice 1 e1
+binddevice 2 e2
+binddevice 3 e3
+binddevice 4 e4
+binddevice 5 e5
+binddevice 6 e6
+binddevice 7 e7
+binddevice 8 e8
+binddevice 9 e9
+binddevice 10 e10
+binddevice 11 e11
+binddevice 12 e12
+binddevice 13 e13
+binddevice 14 e14
+binddevice 15 e15
+binddevice 16 e16
+binddevice 17 e17
+binddevice 18 e18
+binddevice 19 e19
+binddevice 20 e20
+binddevice 21 e21
+binddevice 22 e22
+binddevice 23 e23
+binddevice 24 e24
+binddevice 25 e25
+binddevice 26 e26
+binddevice 27 e27
+binddevice 28 e28
+binddevice 29 e29
+binddevice 30 e30
+binddevice 31 e31
+binddevice 32 e32
+binddevice 33 e33
+binddevice 34 e34
+binddevice 35 e35
+binddevice 36 e36
+binddevice 37 e37
+binddevice 38 e38
+binddevice 39 e39
+binddevice 40 e40
+binddevice 41 e41
+binddevice 42 e42
+binddevice 43 e43
+binddevice 44 e44
+binddevice 45 e45
+binddevice 46 e46
+binddevice 47 e47
+binddevice 48 e48
+binddevice 49 e49
+binddevice 50 e50
+binddevice 51 e51
+binddevice 52 e52
+binddevice 53 e53
+binddevice 54 e54
+binddevice 55 e55
+binddevice 56 e56
+binddevice 57 e57
+binddevice 58 e58
+binddevice 59 e59
+binddevice 60 e60
+binddevice 61 e61
+binddevice 62 e62
+binddevice 63 e63
+binddevice 64 e64
+binddevice 65 e65
+binddevice 66 e66
+binddevice 67 e67
+binddevice 68 e68
+binddevice 69 e69
+binddevice 70 e70
+binddevice 71 e71
+binddevice 72 e72
+binddevice 73 e73
+binddevice 74 e74
+binddevice 75 e75
+binddevice 76 e76
+binddevice 77 e77
+binddevice 78 e78
+binddevice 79 e79
+binddevice 80 e80
+binddevice 81 e81
+binddevice 82 e82
+binddevice 83 e83
+binddevice 84 e84
+binddevice 85 e85
+binddevice 86 e86
+binddevice 87 e87
+binddevice 88 e88
+binddevice 89 e89
+binddevice 90 e90
+move 1 (2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90)
+creategroup 1 (2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90)
+commit
+time log

@@ -1,0 +1,4 @@
+#Termite2 Server automatically discovers the local IP address of the machine however 
+#if you want to use other address you can specify it on this file
+#Place ip on line bellow without spaces (# means commented line) example:
+#192.168.1.2

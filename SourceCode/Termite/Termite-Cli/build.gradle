@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'groovy'
+
+mainClassName = "pt.inesc.termite.cli.Main"
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'org.codehaus.groovy:groovy-all:2.3.6'
+}
+
+run {
+    standardInput = System.in
+    enableAssertions = true
+}
+
+sourceSets {
+    main {
+        java { srcDirs = [] }    // no source dirs for the java compiler
+        groovy { srcDirs = ["src/main/groovy", "src/main/java"] }  // compile everything in src/ with groovy
+    }
+}
+

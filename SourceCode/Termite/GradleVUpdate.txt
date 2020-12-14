@@ -1,0 +1,59 @@
+Update nas versões do Gradle e android tools. 
+Funciona com Jdk 8 e Gradle 4.6:
+
+~/TermiteCMov/gradle/wrapper/gradle-wrapper.properties
+REMOVIDO distributionUrl=https\://services.gradle.org/distributions/gradle-2.2.1-all.zip
+NOVA VERSÃO distributionUrl=https\://services.gradle.org/distributions/gradle-4.6-all.zip
+
+~/TermiteCMov/build.gradle
+
+buildscript {
+    repositories {
+        jcenter()
+        NOVO mavenCentral()
+        NOVO maven { url "https://maven.google.com/" }
+    }
+    dependencies {
+	REMOVIDO classpath ‘com.android.tools.build:gradle:1.0.0'
+    	NOVA VERSÃO classpath ‘com.android.tools.build:gradle:3.2.1’
+	…
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        NOVO mavenCentral()
+        NOVO maven { url "https://maven.google.com/" }
+    }
+}
+
+~/TermiteCMov/Termite-WifiP2P-API/build.gradle
+~/TermiteCMov/Termite-WifiP2P-MsgSender/build.gradle
+~/TermiteCMov/Termite-WifiP2P-PeerScanner/build.gradle
+~/TermiteCMov/Termite-WifiP2P-SimpleChat/build.gradle
+
+android {
+    REMOVIDO compileSdkVersion 21
+    NOVA VERSÃO compileSdkVersion 26
+    REMOVIDO buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        REMOVIDO targetSdkVersion 21
+        NOVA VERSÃO targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    REMOVIDO compile ‘com.android.support:appcompat-v7:21.0.3'
+    NOVA VERSÃO compile 'com.android.support:appcompat-v7:26.1.0'
+}

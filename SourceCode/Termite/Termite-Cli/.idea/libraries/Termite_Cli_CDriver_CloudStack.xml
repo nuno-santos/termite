@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Termite-Cli-CDriver-CloudStack">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/drivers/connectors/cloudstack/Termite-Cli-CDriver-CloudStack.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

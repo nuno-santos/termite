@@ -1,0 +1,7 @@
+newdevice a
+newdevice b
+binddevice a e1
+binddevice b e2
+move a (b)
+creategroup a (b)
+commit

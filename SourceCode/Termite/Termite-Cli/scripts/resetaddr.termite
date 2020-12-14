@@ -1,0 +1,13 @@
+time reset
+list emus
+clear
+unassignaddr e1
+unassignaddr e2
+unassignaddr e3
+unassignaddr e4
+unassignaddr e5
+unassignaddr e6
+unassignaddr e7
+unassignaddr e8
+unassignaddr e9
+unassignaddr e10

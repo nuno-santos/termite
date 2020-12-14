@@ -1,0 +1,8 @@
+Para correr:
+Dar set nas variáveis globais TERMITE_CLI_PATH, TERMITE_PLATFORM e ANDROID_HOME
+
+Na root do projecto /TermiteCMov executar 
+./gradlew clean build
+
+Depois na pasta /TermiteCMov/Termite-Cli
+./termite.sh
