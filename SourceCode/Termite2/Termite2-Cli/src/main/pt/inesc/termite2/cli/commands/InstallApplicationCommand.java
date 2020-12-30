@@ -23,6 +23,7 @@ public class InstallApplicationCommand extends Command {
         String verificationResult = verifyAllCommandArgs(fullCommand, context);
 
         if(!(verificationResult.equals(OK))){
+            printHelp();
             return returnError(verificationResult);
         }
 

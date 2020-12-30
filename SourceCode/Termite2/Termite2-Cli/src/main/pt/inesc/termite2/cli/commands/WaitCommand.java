@@ -16,6 +16,7 @@ public class WaitCommand extends Command {
         assert context != null && args != null;
 
         if (args.length != 2 && args.length != 3) {
+            printHelp();
             return returnError("Wrong number of input arguments.");
         }
 

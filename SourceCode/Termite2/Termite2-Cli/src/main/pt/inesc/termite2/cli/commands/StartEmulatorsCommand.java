@@ -27,6 +27,7 @@ public class StartEmulatorsCommand extends Command {
         String verificationResult = verifyAllCommandArgs(fullCommand, context);
 
         if(!(verificationResult.equals(OK))){
+            printHelp();
             return returnError(verificationResult);
         }
 
@@ -86,7 +87,7 @@ public class StartEmulatorsCommand extends Command {
     }
 
     public void printHelp() {
-        System.out.println("Syntax: startemu <tserver-ip> <all|nº> <app-package> | <tserver-ip> <all|nº> <app-package> | ...");
+        System.out.println("Syntax: startemus <tserver-ip> <all|nº> <app-package> | <tserver-ip> <all|nº> <app-package> | ...");
     }
 
     public String getExplanation(){

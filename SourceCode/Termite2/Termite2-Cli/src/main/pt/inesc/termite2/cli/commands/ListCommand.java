@@ -31,7 +31,7 @@ public class ListCommand extends Command {
             listBinds(context);
             return OK;
         }
-        if (option.equals("networks") || option.equals("nets")) {
+        if (option.equals("servers") || option.equals("s")) {
             listControllerNetworks(context);
             return OK;
         }
@@ -196,7 +196,7 @@ public class ListCommand extends Command {
     public void printHelp() {
         System.out.println("Syntax: list|ls <what>");
         System.out.println("Options:");
-        System.out.println("   emulators|emus, networks|nets, devices|d, groups|g, neighbors|n,");
+        System.out.println("   emulators|emus, servers|s, devices|d, groups|g, neighbors|n,");
         System.out.println("   binds|b, tnetwork|tnet, scripts|scp, history|h");
     }
 

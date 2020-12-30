@@ -31,7 +31,7 @@ public class Main {
         }
 
         /*
-         * Creates receivers threads starts them and then saves them on receiversThreads Hashtable .
+         * Creates and starts receivers threads.
          */
         try {
             System.out.println("Creating receiver Threads:");
@@ -79,6 +79,7 @@ public class Main {
     private static void printStartMessage() {
         System.out.println("");
         System.out.println("  \u001B[1mTermite2 Server ONLINE on network " + ConfigController.getLocalNetworkIp() + ":\u001B[0m");
+        System.out.println("  \u001B[1mTo register this Termite2 Server on Termite2 Client use the address: " + ConfigController.getLocalNetworkIp() +":"+ ConfigController.getClientPort() + "\u001B[0m");
         System.out.println("  Working Directory = " + System.getProperty("user.dir"));
         System.out.println("  TERMITE2_SERVER_PATH = " + ConfigController.getTermiteServerPath());
         System.out.println("  TERMITE2_PLATFORM = " + ConfigController.getServerPlatform());

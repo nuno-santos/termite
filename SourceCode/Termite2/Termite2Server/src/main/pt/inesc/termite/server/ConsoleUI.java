@@ -79,6 +79,7 @@ public class ConsoleUI {
     }
 
     private void printHelp() {
+        System.out.println("\u001B[1mTo register this Termite2 Server on Termite2 Client use the address: " + ConfigController.getLocalNetworkIp() +":"+ ConfigController.getClientPort() + "\u001B[0m");
         System.out.println("Type \"print\" to print current data structures");
         System.out.println("Type \"quit\" to stop TermiteServer");
         System.out.println("");

@@ -22,6 +22,7 @@ public class RunLocalScriptCommand extends Command {
 
         // verify num of arguments
         if(args.length < 2){
+            printHelp();
             return "Error: Wrong number of arguments";
         }
 
